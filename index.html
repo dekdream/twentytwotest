@@ -33,21 +33,6 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <!-- LINE Login is used only by the profile's "Connect LINE" action. -->
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-  <script>
-    window.lineAccountLink = async function (liffId) {
-      if (!window.liff) throw new Error('LINE Login SDK could not be loaded.');
-      await window.liff.init({ liffId: liffId });
-      if (!window.liff.isLoggedIn()) {
-        window.liff.login({ redirectUri: window.location.href });
-        return null;
-      }
-      const idToken = window.liff.getIDToken();
-      if (!idToken) throw new Error('LINE did not return an identity token.');
-      return idToken;
-    };
-  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
