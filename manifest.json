@@ -1,11 +1,11 @@
 {
-    "name": "hr_management",
-    "short_name": "hr_management",
+    "name": "Twenty Two HR",
+    "short_name": "Twenty Two",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#F4DCE4",
+    "theme_color": "#7B2946",
+    "description": "Twenty Two Employee Experience",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
